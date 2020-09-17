@@ -13,6 +13,6 @@ int main(){
 	cout << "gazeuses           | Saturne           | H2            | He" << endl;
 	cout << "gazeuses           | Uranus            | H2            | He" << endl;
 	cout << "gazeuses           | Neptune           | H2            | He" << endl;
-	return 0;
+	return EXIT_SUCCESS;
 }
 

@@ -8,7 +8,8 @@ int main(){
 	string prenom;
 	getline(cin, prenom);
 
-	int age, ANNEE_ACTUELLE = 2020, annee_naissance;
+	const int ANNEE_ACTUELLE = 2020;
+	int age, annee_naissance;
 	cout << "Entrez votre age :";
 	cin >> age;
 
