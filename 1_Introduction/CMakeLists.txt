@@ -10,14 +10,14 @@ set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wconversion -Wsign-conversion -pedantic")
 
 # Ex 1
 #add_executable( Ex1-1 Ex1-1.cpp)
-add_executable( MonEx1-1 MonEx1-1.cpp)
+#add_executable( MonEx1-1 MonEx1-1.cpp)
 
 # Ex 2
-add_executable( Ex1-2 Ex1-2.cpp)
+#add_executable( Ex1-2 Ex1-2.cpp)
 
 # Ex 3
-add_executable( Ex1-3 Ex1-3.cpp)
+#add_executable( Ex1-3 Ex1-3.cpp)
 
 # Ex 4
-add_executable( Ex1-4 Ex1-4.cpp)
+#add_executable( Ex1-4 Ex1-4.cpp)
 
