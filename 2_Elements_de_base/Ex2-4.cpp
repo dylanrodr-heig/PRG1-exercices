@@ -6,17 +6,15 @@ using namespace std;
 
 int main(){
 
-	cout << "signed char (" << numeric_limits<signed char>::digits + 1 << " bits) : "
-		  << (int)numeric_limits<signed char>::lowest() << " .. " << (int)numeric_limits<signed char>::max() << endl
-		  << "short (" << numeric_limits<signed short>::digits + 1 << " bits) : "
-		  << numeric_limits<signed short>::lowest() << " .. " << numeric_limits<signed short>::max() << endl
-		  << "int (" << numeric_limits<signed int>::digits + 1 << " bits) : "
-		  << numeric_limits<signed int>::lowest() << " .. " << numeric_limits<signed int>::max() << endl
-		  << "long (" << numeric_limits<signed long>::digits + 1 << " bits) : "
-		  << numeric_limits<signed long>::lowest() << " .. " << numeric_limits<signed long>::max() << endl
-		  << "long long (" << numeric_limits<signed long long>::digits + 1 << " bits) : "
-		  << numeric_limits<signed long long>::lowest() << " .. " << numeric_limits<signed long long>::max() << endl;
-
+	unsigned long long binary = 1010101;
+	const unsigned BASE = 2;
+	long double decimalNumber = 0;
+	while (binary) {
+		int lastDigit = binary % 10;
+		binary = binary/10;
+		decimalNumber += lastDigit*BASE;
+		BASE = BASE*2;
+	}
 	return EXIT_SUCCESS;
 }
 
